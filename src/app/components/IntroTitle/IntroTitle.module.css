@@ -1,0 +1,39 @@
+.intro {
+  height: 100vh;
+  background: #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.typewriter {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  color: white;
+  text-align: center;
+  max-width: 90%;
+  line-height: 1.2;
+}
+
+.dividerLine {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(120,140,255,0.8),
+    transparent
+  );
+  margin-bottom: 2rem;
+}
+
+.pulse {
+  animation: pulseLine 2s ease-in-out infinite;
+}
+
+@keyframes pulseLine {
+  0%,100% { opacity: 0.3; transform: scaleX(0.8); }
+  50% { opacity: 1; transform: scaleX(1); }
+}
