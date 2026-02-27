@@ -1,0 +1,233 @@
+/* === APERCU === */
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/apercu-light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/Apercu-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/apercu-regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/apercu-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/Apercu-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/apercu-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/Apercu-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/apercu-extrabold.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Apercu";
+  src: url("/fonts/Apercu/Apercu-ExtraBoldItalic.otf") format("opentype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === BREVE TEXT === */
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-BookItalic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-SemiBoldItalic.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "BreveText";
+  src: url("/fonts/BreveText/BreveText-BlackItalic.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === WIRED DISPLAY (Condensed Headline Font) === */
+
+@font-face {
+  font-family: "WiredDisplay";
+  src: url("/fonts/WiredDisplay/OTF/WiredDisplay-BoldCondensed.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WiredDisplay";
+  src: url("/fonts/WiredDisplay/OTF/WiredDisplay-BoldCondensedItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* === WIRED MONO === */
+
+@font-face {
+  font-family: "WiredMono";
+  src: url("/fonts/WiredMono/WiredMono-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WiredMono";
+  src: url("/fonts/WiredMono/WiredMono-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WiredMono";
+  src: url("/fonts/WiredMono/WiredMono-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "WiredMono";
+  src: url("/fonts/WiredMono/WiredMono-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === WIRED DISPLAY SLAB === */
+
+@font-face {
+  font-family: "WiredDisplaySlab";
+  src: url("/fonts/WiredDisplaySlabTest926-BoldCondensedSlab.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
