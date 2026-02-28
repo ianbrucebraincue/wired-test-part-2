@@ -5,6 +5,7 @@ import IntroTitle from "./components/IntroTitle/IntroTitle";
 import TextColumn from "./components/TextColumn/TextColumn";
 import TextColumnFlood from "./components/TextColumnFlood/TextColumnFlood";
 import ImageBlock from "./components/ImageBlock/ImageBlock";
+import StackedCards from "./components/StackedCards/StackedCards";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <TextColumn
       title="At first, the idea seemed a little absurd, even to me. But the more I thought about it, the more sense it made: If my goal was to understand people who fall in love with AI boyfriends and girlfriends, why not rent a vacation house and gather a group of human-AI couples together for a romantic getaway ?"
       />
+      <StackedCards />
       <TextColumn
       paragraph="In my vision, the humans and their chatbot companions were going to do all the things regular couples do on romantic getaways: Sit around a fire and gossip, watch movies, play risqué party games. I didn’t know how it would turn out—only much later did it occur to me that I’d never gone on a romantic getaway of any kind and had no real sense of what it might involve. But I figured that, whatever happened, it would take me straight to the heart of what I wanted to know, which was: What’s it like? What’s it really and truly like to be in a serious relationship with an AI partner? Is the love as deep and meaningful as in any other relationship? Do the couples chat over breakfast? Cheat? Break up? And how do you keep going, knowing that, at any moment, the company that created your partner could shut down, and the love of your life could vanish forever?"
       />
