@@ -12,9 +12,6 @@ export default function TextColumn({title, paragraph}) {
 
   return (
     <>
-      {/* Optional subtle AI background */}
-      <div className={styles.aiAmbient} />
-
       <section ref={textColumnRef} className={styles.textColumn}>
         {title && (
           <h3 className={`${styles.fadeUp} ${styles.title}`}>
