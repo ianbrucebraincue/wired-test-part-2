@@ -3,9 +3,9 @@
 import { useEffect } from "react";
 import { gsap } from "../lib/gsap";
 
-export default function useIntroTitleAnimation(sectionRef, titleRef) {
+export default function useIntroTitleAnimation(sectionRef, titleRef, heartRef) {
   useEffect(() => {
-    if (!sectionRef.current || !titleRef.current) return;
+    if (!sectionRef.current || !titleRef.current || !heartRef.current) return;
 
     const phrases = [
       "My Couples Retreat",
@@ -14,9 +14,13 @@ export default function useIntroTitleAnimation(sectionRef, titleRef) {
     ];
 
     const titleEl = titleRef.current;
+    const heart = heartRef.current;
 
     const ctx = gsap.context(() => {
-      
+
+      // Ensure section can contain absolute heart
+      gsap.set(sectionRef.current, { position: "relative" });
+
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: sectionRef.current,
@@ -27,7 +31,7 @@ export default function useIntroTitleAnimation(sectionRef, titleRef) {
         }
       });
 
-      phrases.forEach((phrase) => {
+      phrases.forEach((phrase, index) => {
 
         // TYPE
         tl.to({}, {
@@ -39,23 +43,39 @@ export default function useIntroTitleAnimation(sectionRef, titleRef) {
           }
         });
 
-        // PAUSE
         tl.to({}, { duration: 0.5 });
 
-        // DELETE
-        tl.to({}, {
-          duration: phrase.length * 0.03,
-          onUpdate: function () {
-            const progress = this.progress();
-            const length = phrase.length - Math.floor(progress * phrase.length);
-            titleEl.textContent = phrase.slice(0, length);
-          }
-        });
+        // Only delete first two phrases
+        if (index < phrases.length - 1) {
+          tl.to({}, {
+            duration: phrase.length * 0.03,
+            onUpdate: function () {
+              const progress = this.progress();
+              const length =
+                phrase.length - Math.floor(progress * phrase.length);
+              titleEl.textContent = phrase.slice(0, length);
+            }
+          });
+        }
+      });
 
+      // ❤️ Animate heart in
+      tl.to(heart, {
+        opacity: 0.15,
+        scale: 1.6,
+        duration: 1,
+        ease: "power2.out"
+      });
+
+      // Fade title + heart out together
+      tl.to([titleEl, heart], {
+        opacity: 0,
+        duration: 1,
+        ease: "power2.in"
       });
 
     }, sectionRef);
 
     return () => ctx.revert();
-  }, [sectionRef, titleRef]);
+  }, [sectionRef, titleRef, heartRef]);
 }
