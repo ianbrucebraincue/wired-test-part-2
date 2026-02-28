@@ -4,6 +4,10 @@
   padding: 2rem 1.25rem;
 }
 
+.textColumnFlood {
+  margin-bottom: 50vh;
+}
+
 .title {
   font-size: 30px;
   line-height: 1.2;
@@ -36,4 +40,11 @@
   );
   pointer-events: none;
   z-index: -1;
+}
+
+.paragraph,
+.title {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }

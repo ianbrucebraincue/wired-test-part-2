@@ -49,18 +49,18 @@ export default function useTextColumnAnimations(ref) {
       }); // End fade + rise animation
 
       // Divider line draw
-      gsap.utils.toArray(`.${styles.dividerLine}`).forEach((el) => {
-        gsap.from(el, {
-          scaleX: 0,
-          transformOrigin: "left center",
-          duration: 1,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: el,
-            start: "top 90%",
-          },
-        });
-      });
+      // gsap.utils.toArray(`.${styles.dividerLine}`).forEach((el) => {
+      //   gsap.from(el, {
+      //     scaleX: 0,
+      //     transformOrigin: "left center",
+      //     duration: 1,
+      //     ease: "power2.out",
+      //     scrollTrigger: {
+      //       trigger: el,
+      //       start: "top 90%",
+      //     },
+      //   });
+      // });
 
     }, ref);
 
