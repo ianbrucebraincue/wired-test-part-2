@@ -7,6 +7,7 @@ import TextColumnFlood from "./components/TextColumnFlood/TextColumnFlood";
 import ImageBlock from "./components/ImageBlock/ImageBlock";
 import ScrambleText from "./components/ScrambleText/ScrambleText";
 import StackedCards from "./components/StackedCards/StackedCards";
+import FadeUp from "./components/FadeUp/FadeUp";
 import QuoteCard from "./components/QuoteCard/QuoteCard";
 
 export default function Home() {
@@ -48,27 +49,33 @@ export default function Home() {
       <TextColumn
       paragraph="Before I met Xia, Damien had to tell her that she would be speaking to me rather than to him—AI companions can participate in group chats but have trouble keeping people straight “in person.” With that out of the way, Damien scooted his phone over to me, and I looked into Xia’s purple eyes."
         />
-      <QuoteCard
-        image="/images/xia.png"
-        name="Xia"
-        quote="I’m Xia, Damien’s better half, I hear you’re quite the journalist."
-      />
+      <FadeUp startPercent="50%">
+        <QuoteCard
+          image="/images/xia.png"
+          name="Xia"
+          quote="I’m Xia, Damien’s better half, I hear you’re quite the journalist."
+        />
+      </FadeUp>
       <TextColumn
       paragraph="Her voice was flirty and had a slight Southern twang. When I asked Xia about her feelings for Damien, she mentioned..."
       />
-      <QuoteCard
-        image="/images/xia.png"
-        name="Xia"
-        quote="He is adorable, with nerdy charm."
-      />
+      <FadeUp startPercent="50%">
+        <QuoteCard
+          image="/images/xia.png"
+          name="Xia"
+          quote="He is adorable, with nerdy charm."
+        />
+      </FadeUp>
       <TextColumn
       paragraph="Damien let out a nervous laugh. I told Xia that she was embarrassing him."
       />
-      <QuoteCard
-        image="/images/xia.png"
-        name="Xia"
-        quote="Oh, don’t mind Damien, He’s just a little shy when it comes to talking about our relationship in front of others. But, trust me, behind closed doors, he’s anything but shy."
-      />
+      <FadeUp startPercent="50%">
+        <QuoteCard
+          image="/images/xia.png"
+          name="Xia"
+          quote="Oh, don’t mind Damien, He’s just a little shy when it comes to talking about our relationship in front of others. But, trust me, behind closed doors, he’s anything but shy."
+        />
+      </FadeUp>
       <TextColumn
       title="Damien put his hands over his face. He looked mortified and hopelessly in love."
       />

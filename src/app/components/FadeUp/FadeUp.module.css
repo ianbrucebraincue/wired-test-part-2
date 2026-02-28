@@ -1,0 +1,3 @@
+.fadeUp {
+  will-change: transform, opacity;
+}
