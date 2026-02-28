@@ -9,15 +9,12 @@ export default function IntroTitle() {
   useIntroTitleAnimation(introRef, titleRef);
 
   return (
-    <>
-      <section ref={introRef} className={styles.intro}>
-        <div className={`${styles.dividerLine} ${styles.pulse}`} />
-        <h1 ref={titleRef} className={styles.typewriter}/>
-      </section>
+     <section ref={introRef} className={styles.intro}>
+        <div className={styles.dividerWrapper}>
+          <div className={`${styles.dividerLine} ${styles.pulse}`} />
+        </div>
 
-      <article className="article">
-        <p>Article content starts here...</p>
-      </article>
-    </>
+        <h1 ref={titleRef} className={styles.typewriter} />
+      </section>
   );
 }

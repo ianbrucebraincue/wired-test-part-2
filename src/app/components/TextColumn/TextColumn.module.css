@@ -1,0 +1,39 @@
+.textColumn {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.fadeUp {
+  will-change: transform, opacity;
+}
+
+.dividerLine {
+  height: 1px;
+  margin: 3rem 0;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(120, 140, 255, 0.6),
+    transparent
+  );
+  transform-origin: left;
+}
+
+.aiAmbient {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 20%,
+    rgba(120, 140, 255, 0.05),
+    transparent 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
