@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { gsap } from "../lib/gsap";
+import { gsap, ScrollTrigger } from "../lib/gsap";
 import styles from "../components/TextColumn/TextColumn.module.css";
 
 export default function useTextColumnAnimations(ref) {
@@ -12,45 +12,41 @@ export default function useTextColumnAnimations(ref) {
       
       // Fade + rise animation
       gsap.utils.toArray(`.${styles.fadeUp}`).forEach((el) => {
-
-        // Create intro tween (paused initially)
-        const introTween = gsap.fromTo(
-          el,
-          { 
-            y: 30,
-            opacity: 0 
-          },
-          { 
-            y: 0,
-            opacity: 1,
-            duration: 0.8,
-            ease: "power2.out",
-            paused: true
-          }
-        );
+        // Set initial hidden state once
+        gsap.set(el, { y: 30, opacity: 0 });
 
         ScrollTrigger.create({
           trigger: el,
           start: "top 85%",
-
-          // Scroll down into view
-          onEnter: () => introTween.play(),
-
-          // Scroll back down into view from above
-          onEnterBack: () => introTween.play(),
-
-          // Scroll up past it (fade out faster)
+          onEnter: () => {
+            gsap.to(el, {
+              y: 0,
+              opacity: 1,
+              duration: 0.8,
+              ease: "power2.out",
+              overwrite: "auto"
+            });
+          },
+          onEnterBack: () => {
+            gsap.to(el, {
+              y: 0,
+              opacity: 1,
+              duration: 0.6,
+              ease: "power2.out",
+              overwrite: "auto"
+            });
+          },
           onLeaveBack: () => {
             gsap.to(el, {
-              y: 15,               // smaller drop on exit
+              y: 15,
               opacity: 0,
-              duration: 0.3,       // 👈 faster fade out
-              ease: "power1.in"
+              duration: 0.3,
+              ease: "power1.in",
+              overwrite: "auto"
             });
           }
-        });
-
-      });
+        }); // End ScrollTrigger.create
+      }); // End fade + rise animation
 
       // Divider line draw
       gsap.utils.toArray(`.${styles.dividerLine}`).forEach((el) => {

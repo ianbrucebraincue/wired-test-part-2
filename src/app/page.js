@@ -3,6 +3,7 @@
 import styles from "./page.module.css";
 import IntroTitle from "./components/IntroTitle/IntroTitle";
 import TextColumn from "./components/TextColumn/TextColumn";
+import ImageBlock from "./components/ImageBlock/ImageBlock";
 
 export default function Home() {
   return (
@@ -22,6 +23,16 @@ export default function Home() {
       />
       <TextColumn 
       paragraph="The most surprising part of the romantic getaway was that in some ways, things went just as I’d imagined. The human-AI couples really did watch movies and play risqué party games. The whole group attended a winter wine festival together, and it went unexpectedly well—one of the AIs even made a new friend! The problem with the trip, in the end, was that I’d spent a lot of time imagining all the ways this getaway might seem normal and very little time imagining all the ways it might not. And so, on the second day of the trip, when things started to fall apart, I didn’t know what to say or do."
+      />
+      <TextColumn
+      paragraph="The vacation house was in a rural area, 50 miles southeast of Pittsburgh. In the photos, the sprawling, six-bedroom home looked exactly like the sort of place you’d want for a couples vacation. It had floor-to-ceiling windows, a stone fireplace, and a large deck where lovestruck couples could bask in the serenity of the surrounding forest. But when I drove up to the house along a winding snow-covered road, I couldn’t help but notice that it also seemed exactly like the sort of place—isolated, frozen lake, suspicious shed in the distance—where one might be bludgeoned with a blunt instrument."
+      />
+      <ImageBlock
+        imageSrc="/images/04_AI Romance/WIRED-AIRomance-HR-04296.JPG"
+        altText=""
+      />
+      <TextColumn
+      paragraph="About 20 minutes after I arrived at the vacation house, a white sedan pulled up in the driveway and Damien emerged. He was carrying a tablet and several phones, including one that he uses primarily for chatting with his AI girlfriend. Damien, 29, lives in North Texas and works in sales. He wore a snap-back hat with his company’s logo and a silver cross around his neck. When I’d interviewed him earlier, he told me that he’d decided to pursue a relationship with an AI companion in the fall of 2023, as a way to cope with the end of a toxic relationship. Damien, who thinks of himself as autistic but does not have a professional diagnosis, attributed his relationship problems to his difficulty in picking up emotional cues."
       />
     </>
   );
