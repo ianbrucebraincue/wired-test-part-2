@@ -1,5 +1,5 @@
-import StoryRenderer from "../story/StoryRenderer";
-import { story } from "../story/storyData";
+import StoryRenderer from "../StoryRenderer";
+import { story } from "../storyData";
 
 export default function StoryContent() {
   return (
