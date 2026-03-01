@@ -1,37 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# WIRED Web Developer Technical Test
 
-## Getting Started
+## Part 2 — Interactive Story Reimagining
 
-First, run the development server:
+---
+
+## 🛠 Available Scripts
+
+This project includes the required npm scripts:
+
+### ▶️ `npm run start`
+
+Runs the development server at:
+
+http://localhost:3000
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Used for local development with live updates.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🏗 `npm run build`
 
-## Learn More
+Generates a static production build and outputs files to:
 
-To learn more about Next.js, take a look at the following resources:
+```
+/dist
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The `/dist` directory contains fully static assets ready for deployment.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Overview
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# wired-test-part-2
+This repository contains my submission for **Part 2** of the WIRED Web Developer Technical Test.
+
+The objective was to recreate one WIRED story in a visually engaging and interactive way.  
+Using techniques such as parallax, scrollytelling, and motion-driven transitions, the story has been reimagined to enhance reader immersion and add value for subscribers.
+
+### Selected Story
+
+- https://www.wired.com/story/couples-retreat-with-3-ai-chatbots-and-humans-who-love-them-replika-nomi-chatgpt/
+
+---
+
+## 🎯 Approach & Creative Direction
+
+The goal of this implementation was not just replication, but enhancement.
+
+The experience focuses on:
+
+- Scroll-driven storytelling
+- Layered visual hierarchy
+- Motion to reinforce narrative pacing
+- Intentional use of whitespace and typography
+- Responsive immersive layouts across breakpoints
+
+Interactive techniques were used to guide attention, emphasize key moments, and create a more dynamic reading experience.
+
+---
+
+## 🎬 Animation
+
+All animations are built using **GSAP (GreenSock Animation Platform)**:
+
+https://gsap.com/
+
+GSAP was chosen for:
+
+- Precise timeline control
+- High performance rendering
+- Scroll-based animation capabilities
+- Clean integration with React
+- Production-level reliability
