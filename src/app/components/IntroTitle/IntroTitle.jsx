@@ -1,3 +1,5 @@
+'use client';
+
 import { useRef } from "react";
 import useIntroTitleAnimation from "../../hooks/useIntroTitleAnimation";
 import styles from "./IntroTitle.module.css";
@@ -10,7 +12,16 @@ export default function IntroTitle() {
   useIntroTitleAnimation(introRef, titleRef, heartRef);
 
   return (
-     <section ref={introRef} className={styles.intro}>
+    <>
+      <div className={styles.dividerContainer}>
+        <div className={styles.dividerWrapper}>
+          <div className={`${styles.dividerLine} ${styles.pulse}`} />
+        </div>
+      </div>
+
+      <div className={styles.aiAmbient} />
+      
+      <section ref={introRef} className={styles.intro}>
         <div className={styles.dividerWrapper}>
           <div className={`${styles.dividerLine} ${styles.pulse}`} />
         </div>
@@ -19,5 +30,6 @@ export default function IntroTitle() {
 
         <h1 ref={titleRef} className={styles.typewriter} />
       </section>
+    </>
   );
 }
