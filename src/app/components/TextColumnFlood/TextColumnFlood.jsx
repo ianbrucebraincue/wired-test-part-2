@@ -17,9 +17,6 @@ export default function TextColumn({title, paragraph}) {
 
   return (
     <>
-      {/* Optional subtle AI background */}
-      <div className={styles.aiAmbient} />
-
       <section ref={textColumnRef} className={`${styles.textColumn} ${styles.textColumnFlood}`}>
         
         {title && (

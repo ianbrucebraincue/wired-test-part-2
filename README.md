@@ -8,6 +8,18 @@
 
 This project includes the required npm scripts:
 
+### 📦 `npm install`
+
+Installs all project dependencies:
+
+```bash
+npm install
+```
+
+Run this first before any other scripts.
+
+---
+
 ### ▶️ `npm run start`
 
 Runs the development server at:
