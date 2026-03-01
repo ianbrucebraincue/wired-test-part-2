@@ -22,12 +22,7 @@ export default function IntroTitle() {
       <div className={styles.aiAmbient} />
       
       <section ref={introRef} className={styles.intro}>
-        <div className={styles.dividerWrapper}>
-          <div className={`${styles.dividerLine} ${styles.pulse}`} />
-        </div>
-
         <div ref={heartRef} className={styles.heart}>❤️</div>
-
         <h1 ref={titleRef} className={styles.typewriter} />
       </section>
     </>
