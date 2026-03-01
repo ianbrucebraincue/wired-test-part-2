@@ -36,3 +36,9 @@
   overflow-wrap: break-word;
   word-break: break-word;
 }
+
+.paragraph {
+  font-family: var(--font-editorial);
+  font-size: 18px;
+  line-height: 1.6;
+}
