@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { gsap, ScrollTrigger} from "../lib/gsap";
+import { randomChar } from "../utils/helpers";
 
 export default function useScrambleText(
   ref,
@@ -12,7 +13,12 @@ export default function useScrambleText(
     if (!ref.current) return;
 
     const el = ref.current;
-    el.textContent = "XOXOXOXOXOXO";
+
+    const randomString = Array.from({ length: text.length }, () =>
+      randomChar()
+    ).join("");
+
+    el.textContent = randomString;
 
     const ctx = gsap.context(() => {
 
@@ -37,7 +43,7 @@ export default function useScrambleText(
         },
         onLeaveBack: () => {
           gsap.to(el, {
-            scrambleText: "XOXOXOXOXOXO",
+            scrambleText: randomString,
             duration: 1.5
           });
         }
