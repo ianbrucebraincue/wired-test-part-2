@@ -2,6 +2,9 @@
 
 ## Part 2 — Interactive Story Reimagining
 
+🔗 **Live Project:**  
+https://wired-test-part-2.netlify.app/
+
 ---
 
 ## 🛠 Available Scripts
